@@ -4,6 +4,8 @@
 
 package com.kupid.dog.grooming;
 
+import igu.Principal;
+
 /**
  *
  * @author shift
@@ -11,6 +13,9 @@ package com.kupid.dog.grooming;
 public class DogGrooming {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Principal princ = new Principal();
+        princ.setVisible(true);
+        princ.setLocationRelativeTo(null);
     }
 }

@@ -93,6 +93,11 @@ public class CargaDatos extends javax.swing.JFrame {
         btnLimpiar.setFont(new java.awt.Font("Leelawadee", 0, 18)); // NOI18N
         btnLimpiar.setText("Limpiar");
         btnLimpiar.setName(""); // NOI18N
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -231,6 +236,17 @@ public class CargaDatos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        txtNombre.setText("");
+        txtRaza.setText("");
+        txtColor.setText("");
+        txtObservaciones.setText("");
+        txtNombreD.setText("");
+        txtCelularD.setText("");
+        cbAlergias.setSelectedIndex(0);
+        cbEspecial.setSelectedIndex(0);
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

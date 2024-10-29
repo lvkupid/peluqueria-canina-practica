@@ -29,6 +29,11 @@ public class Principal extends javax.swing.JFrame {
         btnCargarDatos.setFont(new java.awt.Font("Leelawadee", 0, 18)); // NOI18N
         btnCargarDatos.setText("Cargar Datos");
         btnCargarDatos.setName(""); // NOI18N
+        btnCargarDatos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCargarDatosActionPerformed(evt);
+            }
+        });
 
         btnListarDatos.setFont(new java.awt.Font("Leelawadee", 0, 18)); // NOI18N
         btnListarDatos.setText("Listar Datos");
@@ -107,6 +112,12 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCargarDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarDatosActionPerformed
+        CargaDatos pantalla = new CargaDatos();
+        pantalla.setVisible(true);
+        pantalla.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btnCargarDatosActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
