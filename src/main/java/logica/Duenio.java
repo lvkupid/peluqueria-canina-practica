@@ -4,11 +4,16 @@
  */
 package logica;
 
-/**
- *
- * @author shift
- */
-public class Duenio {
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Duenio implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id_duenio;
     private String nombre;
     private String celular;
